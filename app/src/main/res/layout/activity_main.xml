@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ren.jiemei.bottomtest.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="99"
+        />
+    <LinearLayout
+        android:background="#5aaa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/group_home"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/main_botttom_home"
+                android:text="首页"
+                android:checked="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/group_invent"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/main_bottom_invent"
+                android:text="投资"
+                android:checked="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/group_find"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/main_bottom_find"
+                android:text="发现"
+                android:checked="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/group_me"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/main_bottom_me"
+                android:text="我的"
+                android:checked="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
